@@ -23,23 +23,23 @@ PRODUCT_COPY_FILES += \
 # for recovery
 PRODUCT_COPY_FILES += \
     device/softwinner/kylin-optimus/recovery.fstab:recovery.fstab \
-    device/softwinner/kylin-optimus/modules/modules/disp.ko:obj/disp.ko \
-    device/softwinner/kylin-optimus/modules/modules/lcd.ko:obj/lcd.ko \
-    device/softwinner/kylin-optimus/modules/modules/hdcp.ko:obj/hdcp.ko \
-    device/softwinner/kylin-optimus/modules/modules/gt82x.ko:obj/gt82x.ko \
     device/softwinner/kylin-optimus/modules/modules/sw-device.ko:obj/sw-device.ko
+#    device/softwinner/kylin-optimus/modules/modules/disp.ko:obj/disp.ko \
+#    device/softwinner/kylin-optimus/modules/modules/lcd.ko:obj/lcd.ko \
+#    device/softwinner/kylin-optimus/modules/modules/hdcp.ko:obj/hdcp.ko \
+#    device/softwinner/kylin-optimus/modules/modules/gt82x.ko:obj/gt82x.ko \
+    
 
 PRODUCT_COPY_FILES += \
-    device/softwinner/kylin-optimus/kernel:kernel \
     device/softwinner/kylin-optimus/fstab.sun9i:root/fstab.sun9i \
     device/softwinner/kylin-optimus/init.sun9i.rc:root/init.sun9i.rc \
     device/softwinner/kylin-optimus/init.recovery.sun9i.rc:root/init.recovery.sun9i.rc \
-    device/softwinner/kylin-optimus/ueventd.sun9i.rc:root/ueventd.sun9i.rc \
-    device/softwinner/kylin-optimus/modules/modules/nand.ko:root/nand.ko \
-    device/softwinner/kylin-optimus/modules/modules/lcd.ko:root/lcd.ko \
-    device/softwinner/kylin-optimus/modules/modules/disp.ko:root/disp.ko \
-    device/softwinner/kylin-optimus/modules/modules/hdcp.ko:root/hdcp.ko 
-
+    device/softwinner/kylin-optimus/ueventd.sun9i.rc:root/ueventd.sun9i.rc 
+#    device/softwinner/kylin-optimus/modules/modules/nand.ko:root/nand.ko \
+#    device/softwinner/kylin-optimus/modules/modules/lcd.ko:root/lcd.ko \
+#    device/softwinner/kylin-optimus/modules/modules/disp.ko:root/disp.ko \
+#    device/softwinner/kylin-optimus/modules/modules/hdcp.ko:root/hdcp.ko 
+#    device/softwinner/kylin-optimus/kernel:kernel \
 PRODUCT_COPY_FILES += \
     device/softwinner/kylin-optimus/configs/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
